@@ -1,0 +1,52 @@
+.app-home {
+    background-image: url('../../assets/Home.svg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.app-home-header {
+    height: 8.3333%;
+    margin: 0 3.6458%;
+    border-bottom: 1px solid #1A1A1A;
+    display: flex;
+    align-items: center;
+}
+
+.app-home-header-logo {
+    width: 13.2584%;
+    height: 42.2222%;
+    object-fit: fill;
+}
+
+.app-home-body {
+    height: 91%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-home-button {
+    width: 24.1667%;
+    height: 6.0606%;
+
+    background: #1A1A1A;
+    border-radius: 8px;
+
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+    margin-bottom: 3.8%;
+}
+
+.app-home-body-logo1 {
+    position: absolute;
+    left: 56.0417%;
+    top: 43.7963%;
+    height: 27.6852%;
+    width: 15.5729%;
+}
