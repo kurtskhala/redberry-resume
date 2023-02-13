@@ -1,0 +1,53 @@
+body{
+    background: #F9F9F9;
+}
+.app-fill {
+    display: inline-block;
+    width: 57.1875%;
+    height: 100vh;
+    background: #F9F9F9;
+    display: flex;
+    flex-direction: row;
+}
+
+.app-fill-left {
+    display: inline-block;
+    width: 13.6612%;
+    height: 100vh;
+}
+
+.app-fill-left-sym {
+    position: relative;
+    cursor: pointer;
+    top: 4.1667%;
+    left: 32%;
+    width: 26.6667%;
+    height: 3.7037%;
+}
+
+.app-fill-right {
+    display: inline-block;
+    width: 72.6775%;
+    min-height: 1080px;
+}
+
+.app-fill-header {
+    display: flex;
+    justify-content: space-between;
+    height: 8.087%;
+    border-bottom: 1px solid #1A1A1A;
+}
+
+.app-fill-header-info {
+    margin-top: 4.3518%;
+}
+
+.app-fill-header-page {
+    margin-top: 4.537%;
+}
+
+.app-fill-form {
+    min-height: 91.851%;
+    display: flex;
+    flex-direction: column;
+}

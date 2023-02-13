@@ -1,0 +1,113 @@
+.app-CV {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 42.8125%;
+    height: 100vh;
+    background-color: white;
+}
+
+.app-CV-cont {
+    width: 75.67%;
+}
+
+.app-CV-button {
+    position: absolute;
+    bottom: 44px;
+    left: 78px;
+    width: 42px;
+    height: 42px;
+}
+
+.app-CV-aboutme-name {
+    margin-top: 68px;
+    margin-bottom: 17px;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+    /* identical to box height */
+
+
+    color: #F93B1D;
+}
+
+.app-CV-aboutme-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-CV-aboutme-contact span{
+    margin-bottom: 10px;
+}
+
+.app-CV-aboutme {
+    min-height: 235px;
+    border-bottom: 1px solid #C8C8C8;
+    margin-bottom: 24px;
+}
+
+.app-CV-header {
+    margin: 15px 0;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #F93B1D;
+}
+
+.app-CV-par {
+    margin: 0;
+    display: inline-block;
+    width: 52.5547%;
+}
+
+.app-CV-aboutme-photo {
+    position: absolute;
+    width: 246px;
+    height: 246px;
+    left: 501px;
+    top: 48px;
+
+    border-radius: 133px;
+}
+
+.app-CV-subtitle {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    /* font-weight: 500; */
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #1A1A1A;
+    margin: 0;
+}
+
+.app-CV-date {
+    font-family: 'Helvetica Neue';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #919191;
+    margin: 7px 0 16px 0;
+}
+
+.app-CV-par-big {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.app-CV-experience {
+    margin-bottom: 26px;
+}
+
+.app-CV-experience-cont {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #C8C8C8;
+}

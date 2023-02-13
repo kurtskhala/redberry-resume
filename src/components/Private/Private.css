@@ -1,0 +1,133 @@
+.app-form-private {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.app-form-private-container {
+    display: flex;
+    flex-direction: column;
+    height: 992px;
+}
+
+.app-form-private-nameAndSur {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 9.6491%; 
+    height: 12.2983%;
+}
+
+.app-form-private-cont {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 46.4912%;
+}
+
+.app-form-label {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.app-form-input {
+    box-sizing: border-box;
+    height: 39.3442%;
+
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.app-form-private-photo {
+    display: flex;
+    margin: 6.7669% 0;
+    height: 2.722%;
+    min-height: 20px;
+    align-items: center;
+}
+
+.app-form-private-photo .app-form-label {
+    margin: 0;
+}
+
+.app-form-private-photobutton {
+    text-align: center;
+    border: none;
+    color: #FFFFFF;
+    margin-left: 19px;
+    width: 13.7%;
+    height: 100%;
+    cursor: pointer;
+
+    background: #0E80BF;
+    border-radius: 4px;
+}
+
+.app-form-private-aboutMe {
+    height: 14.92%;
+}
+
+.app-form-textarea {
+    width: 99.33%;
+    height: 66%;
+}
+
+.app-form-private-cont--big {
+    position: relative;
+    width: 100%;
+    height: 12.2983%;
+    margin-top: 22px;
+}
+
+.app-form-input--big {
+    position: relative;
+    width: 100%;
+}
+
+.app-form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 13.2%;
+    height: 4.637%;
+}
+
+.app-form-button {
+    width: 19%;
+    background: #6B40E3;
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.app-form-valid {
+    width: 16.5px;
+    height: 16.5px;
+    position: absolute;
+    right: 14.75px;
+    bottom: 50%;
+}
+.app-form-error {
+    width: 21px;
+    height: 18.75px;
+    position: absolute;
+    right: -34.5px;
+    bottom: 50%;
+}
+
+.hidden {
+    display: none;
+}

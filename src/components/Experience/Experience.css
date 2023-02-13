@@ -1,0 +1,57 @@
+.app-form-experience-cont {
+    position: relative;
+    width: 100%;
+}
+
+.app-form-experiencebox {
+    height: 992px;
+}
+
+.app-form-private {
+    position: relative;
+}
+
+.app-form-experience-additional {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 332.7px;
+}
+
+.app-form-private-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 12.2983%;
+}
+
+.app-form-moreExp {
+    width: 100%;
+    height: 28.295%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.app-form-moreExp-button {
+    cursor: pointer;
+    height: 51%;
+    min-width: 210px;
+    width: 36.2155%;
+    border: none;
+    background: #62A1EB;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.app-form-buttons-two {
+    display: flex;
+    margin-top: 15.3225%;
+    height: 13.85%;
+    justify-content: space-between;
+}
+
+.app-form-experience-info {
+    height: 14.92%;
+    border-bottom: 1px solid #C1C1C1;
+    padding-bottom: 5.8%;
+}
