@@ -34,7 +34,7 @@ function App() {
         <Route path='/aboutme' element={<><Fill setCvinfo={setCvinfo} header="ᲞᲘᲠᲐᲓᲘ ᲘᲜᲤᲝ" page="1/3" comp={<Private storageInfo={storageInfo.cvinfo.private} setCvinfo={setCvinfo}/>} /> <CV cvinfo={storageInfo.cvinfo}/></>}></Route>
         <Route path='/experience' element={<><Fill setCvinfo={setCvinfo} header="ᲒᲐᲛᲝᲪᲓᲘᲚᲔᲑᲐ" page="2/3" comp={<Experience storageInfo={storageInfo.cvinfo.experience} setCvinfo={setCvinfo} />} /> <CV cvinfo={storageInfo.cvinfo}/></>}></Route>
         <Route path='/education' element={<><Fill setCvinfo={setCvinfo} header="ᲒᲐᲜᲐᲗᲚᲔᲑᲐ" page="3/3" comp={<Education storageInfo={storageInfo.cvinfo.education} cvinfo={cvinfo} setCvinfo={setCvinfo} />} /> <CV cvinfo={storageInfo.cvinfo}/></>}></Route>
-        <Route path='/cv' element={<CV />}></Route>
+        <Route path='/cv' element={<CV cvinfo={cvinfo} />}></Route>
       </Routes>
     </div>
   );

@@ -53,7 +53,7 @@ function Education(props) {
           }
         axios.post('https://resume.redberryinternship.ge/api/cvs', article)
         .then(response => console.log(response));
-        // navigate("/cv");
+        navigate("/cv");
         console.log(article);
     }
     return ( 

@@ -1,9 +1,13 @@
 import '../Private/Private.css';
 import '../Experience/Experience.css';
 import './Education.css';
+import DegreeDropdown from './DegreeDropdown';
 import { useState, useEffect } from 'react';
 import valid from '../../assets/Valid.svg';
 import error from '../../assets/Error.svg';
+
+import axios from "axios";
+
 
 function EducationBox(props) {
     const [uni, setUni] = useState('');
@@ -11,6 +15,34 @@ function EducationBox(props) {
     const [quality, setQuality] = useState('');
     const [date, setDate] = useState('');
     const [educationInfo, setEducationInfo] = useState('');
+
+    const [degree, setDegree] = useState("აირჩიეთ ხარისხი");
+
+    const [degreeStyle, setDegreeStyle] = useState("plain");
+    const [dropDown, setDropDown] = useState("false");
+
+    const [degrees, setDegrees] = useState([]);
+
+
+    const handleDropDown = () => {
+        setDropDown(!dropDown);
+    }
+
+
+    const getData = async () => {
+        const { data } = await axios.get(`https://resume.redberryinternship.ge/api/degrees`);
+        setDegrees(data);
+    };
+    useEffect(() => {
+        getData();
+    }, []);
+
+    const handleDegreeChange = (degree) => {
+        setDegree(degree);
+        setDegreeStyle("valid");
+        setDropDown(!dropDown);
+
+    }
 
     const [educationbox, setEducationbox] = useState({uni : props.storageInfo[0].uni, quality : props.storageInfo[0].quality, date : props.storageInfo[0].date, educationInfo : props.storageInfo[0].educationInfo});
     useEffect(() => {
@@ -82,10 +114,13 @@ function EducationBox(props) {
             <div className="app-form-private-date">
                 <div className="app-form-private-cont">
                     <label className="app-form-label" htmlFor="quality">ხარისხი</label>
-                    <select name="quality" className="app-form-input" value = {props.storageInfo[0].quality ? props.storageInfo[0].quality : quality} onChange={handleQuality}>
-                        <option>Credit card</option>
-                        <option>Bank Transfer</option>
-                    </select>
+                    <DegreeDropdown
+                                handleChange={handleDegreeChange}
+                                classname={degreeStyle}
+                                degree={degree}
+                                degreeList={degrees}
+                                handleOpening={handleDropDown}
+                                dropDown={dropDown} />
                     
                 </div>
                 <div className="app-form-private-cont">
